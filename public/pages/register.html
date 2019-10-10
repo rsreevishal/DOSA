@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOSA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="jumbotron" style="text-align: center;">Digital OD Student Attendance</h1>
+        <h2 style="text-align: center;">Registration form</h2>
+        <form>
+            <div class="form-group">
+                <label for="regno">Register number</label>
+                <input class="form-control" type="number" name="regno" id="regno" required />
+            </div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input class="form-control" type="text" name="name" id="name" required />
+            </div>
+            <div class="form-group">
+                    <label for="password">Password</label>
+                    <input class="form-control" type="password" name="password" id="password" required />
+            </div>
+            <div class="form-group">
+                    <label for="mob">Contact number</label>
+                    <input class="form-control" type="number" name="mob" id="mob" required />
+            </div>
+            <div class="form-group">
+                <label for="dept">Department</label>
+                <select class="form-control" name="dept" id="dept" required>
+                    <option>CSE</option>
+                    <option>EEE</option>
+                    <option>ECE</option>
+                    <option>IT</option>
+                    <option>ME</option>
+                    <option>AUTO</option>
+                    <option>BIO</option>
+                    <option>CHE</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="course">Courses taken</label>
+                <div id="course">
+                    <input class="form-control" id="cid" placeholder="Course ID" type="text" required/>
+                    <button class="form-control" id="add" class="btn btn-primary">Add</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="facid">Faculty id</label>
+                <input class="form-control" type="number" name="facid" id="facid" required />
+            </div>
+            <button id="register" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+    <script src="/static/scripts/register.js"></script>
+</body>
+
+</html>

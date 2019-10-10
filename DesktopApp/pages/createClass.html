@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOSA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="jumbotron text-center">Digital OD Students Attendance</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Class name</label>
+                <input type="text" class="form-control" id="name" required />
+            </div>
+            <div class="form-group">
+                <label for="cid">Couser ID</label>
+                <input type="text" class="form-control" id="cid" required />
+            </div>
+            <div class="form-group">
+                <label for="bno">Batch number</label>
+                <input type="number" class="form-control" id="bno" required />
+            </div>
+            <div class="form-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Students</div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-8 col-sm-8 col-lg-8 col-xs-8">
+                                <input class="form-control" id="rollno" type="number" required />
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4">
+                                <button id="addStudent" class="btn btn-primary">ADD&nbsp;<span
+                                        class="badge">+</span></button>
+                            </div>
+                        </div>
+                        <div id="studentList" class="btn-group">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="createNewClass" class="btn btn-success">Create Class</button>
+        </form>
+    </div>
+    <script src="../scripts/renderer.js"></script>
+</body>
+
+</html>
